@@ -1,11 +1,12 @@
+@charset "utf-8";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Tutorial Case
    
    TSS Typographic Style Sheet
-   Author: 
-   Date:   
+   Author: Matthew Hunter
+   Date:   September 6, 2018
    
    Filename: tss_styles.css
 
@@ -15,20 +16,42 @@
 
 /* HTML and Body Styles */
 
+html {
+    background-color: rgb(235, 177, 131);
+    background-color: hsl(27, 72%, 72%);
+}
+
+body {
+    color: rgb(91, 91, 91);
+    background-color: ivory;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 
 
 /* Heading Styles */
 
+article#about_tss h1 {
+    color: white;
+    background-color: rgb(235, 177, 131);
+}
 
+article#about_tss h2 {
+    color: white;
+    background-color: rgb(235, 177, 131);
+}
 
-
-
+article.syllabus h1, article.syllabus h2 {
+    background-color: rgb(255, 185, 255);
+    color: rgb(101, 101, 101);
+}
 
 /* Aside and Blockquote Styles */
 
-
+aside blockquote {
+    color: rgb(232, 165, 116);
+}
 
 
 
