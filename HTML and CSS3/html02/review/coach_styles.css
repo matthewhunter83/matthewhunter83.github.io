@@ -1,11 +1,17 @@
+@charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src: url('nobile-webfont.woff') format('woff'),
+    url('nobile-webfont.ttf') format('truetype');
+}
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Review Assignment
    
    TSS Typographic Style Sheet
-   Author: 
-   Date:   
+   Author: Matthew Hunter
+   Date:   September 7, 2018
    
    Filename: coach_styles.css
 
@@ -14,44 +20,112 @@
 
 /* Main Structural Styles */
 
+html {
+    background-color: hsl(27, 72%, 72%)
+}
 
+body {
+    color: rgb(91, 91, 91);
+    background-color: ivory;
+    font-family: Verdana, Geneva, sans-serif;
+}
 
+body > footer address {
+    background-color: rgb(222, 128, 60);
+    color: rgba(255, 255, 255, 0.6);
+    font: normal small-caps bold 0.9em/3em Nobile, Verdana, Geneva, sans-serif;
+    letter-spacing: 0.2em;
+    margin: 0px;
+    text-align: center;
+}
 
 /* Heading Styles */
 
+h1 {
+    font-weight: normal;
+    font-family: Nobile, Verdana, Geneva, sans-serif;
+    letter-spacing: 0.2em;
+    margin: 0px;
+}
 
+section#tss_coaches h1 {
+    font-size: 2.5em;
+    color: hsl(27, 82%, 85%);
+    background-color: hsl(27, 6%, 21%);
+    padding-left: 10px;
+}
+
+article.coach_bio h2 {
+    font-size: 1.6em;
+    font-weight: normal;
+    color: rgb(240, 125, 0);
+}
 
 /* Blockquote Styles */
 
+/* This code matches the image shown for the final result because the instructions in the digital textbook say to put the background-color and color in the wrong place*/
 
+aside blockquote {
+    font-size: .95em;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: rgb(222, 128, 60);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    quotes: "\201C" "\201D";
+}
 
+aside blockquote::before {
+    content: open-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+aside blockquote::after {
+    content: close-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
 
 /* Navigation Styles */	
 
+body > nav {
+    font-size: .8em;
+    line-height: 2em;
+}
 
+nav > ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
 
+nav > ul li:nth-of-type(6), nav > ul li:nth-of-type(16) {
+    margin-top: 20px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: rgb(222, 128, 60);
+    text-decoration: underline;
+}
 
 /* Paragraph Styles */
 
-
+p {
+    margin: 10px 30px 10px 0px;
+}
 
 /* List Styles */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+article.coach_bio > header > ul {
+    list-style-image: url(check.png);
+    margin: 0px 0px 10px;
+}
 
 
 
