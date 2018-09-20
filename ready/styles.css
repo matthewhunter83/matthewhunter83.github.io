@@ -32,6 +32,11 @@ html {
 h1 {
     font-family: Tele-Ult;
     font-weight: normal;
+    margin: 0px;
+}
+h3 {
+    font-family: Tele-Ult;
+    font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
 }
