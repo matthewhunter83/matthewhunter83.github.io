@@ -34,8 +34,16 @@ h1 {
     font-weight: normal;
     margin: 0px;
 }
-h3 {
+h2 {
     font-family: Tele-Ult;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+}
+h3 {
+    font-family: Tele-Nor;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
