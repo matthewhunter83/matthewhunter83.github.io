@@ -31,14 +31,15 @@
 html {
     font-family: Tele-Nor;
     color: #1A1A1A;
-    background-color: #f9f9f9;
+    background-color: #e20074;
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 6em 0 0 0;
+    margin: 5em 0 0 0;
     text-align: justify;
+    background-color: #f9f9f9;
 }
 
 header > nav {
@@ -73,6 +74,36 @@ header > nav > a {
     flex: 0 0 2.5em;
     text-align: center;
 }
+section.day {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+div.facilitator-guide {
+    margin: 1em;
+    height: 7.57em;
+    min-width: 8.5em;
+    max-width: 8.5em;
+    text-align: center;
+    flex: 1 0 2em;
+    background: url(https://cdn.discordapp.com/attachments/499662815041290241/504736658969591819/t-mobile-white.png) 
+    center 1em no-repeat, radial-gradient(#e63892,#e20074,#e20074);
+    background-size: 5em 1.43em, auto;
+    padding-top: 3.43em;
+    border-radius: .2em;
+    box-shadow: #c1c1c1 .25em .25em .75em;
+    display: flex;
+    align-items: flex-start;
+
+}
+div.facilitator-guide h4 {
+    flex-grow: 1;
+    padding: 1em;
+    color: white;
+    background-color: black;
+}
 .fa-chevron-circle-up {
     position: fixed;
     bottom: 1em;
@@ -95,7 +126,7 @@ h2 {
     padding: 1em;
     position: -webkit-sticky;
     position: sticky;
-    top: 3.75em;
+    top: 4em;
     z-index: 999;
 }
 
@@ -108,7 +139,7 @@ h3 {
     padding: 1em 2em;
     position: -webkit-sticky;
     position: sticky;
-    top: 8.5em;
+    top: 8.9em;
     z-index: 998;
     background: #eeeeee;
 }
@@ -160,4 +191,7 @@ img.slide {
     background-color: #ffffff;
     box-shadow: #c1c1c1 .25em .25em .75em;
 
+}
+div.space {
+    height: 1em;
 }
