@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*
+    Name:   Matthew Hunter
+    Date:   October 15, 2018
+*/
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    margin: auto;
+    background-color:  #AB5A1B;
+    line-height: 1.5em;
+    text-align: justify;
+}
+p {
+    padding: 1em;
+    margin: 1em;
+    border: rgb(109, 49, 35) solid 1px;
+    color: white;
+}
+h1 {
+    font-size: 4em;
+    color: black;
+    text-align: center;
+    padding: .5em;
+}
+h2 {
+    font-size: 2em;
+    padding: .5em;
+}
+nav {
+    background-color: #3E5641;
+    overflow: hidden;
+}
+header {
+    background-color: #AB5A1B;
+}
+header img {
+    max-width: 100%;
+        height: auto;
+        float: right;
+}
+header nav {
+    clear: both;
+}
+header nav ul {
+    max-width: 900px;
+    margin: 0 auto;
+}
+header nav ul li {
+    padding: .5em;
+    width: 6em;
+    display: block;
+    float: left;
+    background-color: #3E5641;
+    color: #83BCA9;
+    text-align: center;
+}
+header nav ul li:hover {
+    background-color: #83BCA9;
+    color: #3E5641;
+}
+article {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+article > ul {
+    list-style: square;
+    margin: 1em;
+}
+article > ol {
+    list-style: decimal;
+    margin: 1em;
+}
+article img {
+    margin: auto;
+    display: block;
+    max-width: 269px;
+    width: 100%;
+    height: auto;
+}
+footer {
+    margin-top: 20px;
+    background-color:  #AB5A1B;
+    color: rgb(209, 133, 103);
+    padding: 2em;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}

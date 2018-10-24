@@ -1,0 +1,65 @@
+~~~ CONTENT FOR INDEX.HTML PAGE ~~~
+
+TEXT FOR MAIN CONTENT:
+
+Cornucopia began as a small poultry shop in rural Connecticut. Once famous only locally for the quality of its poultry, dressings, herbs, and spices, Cornucopia is fast becoming a leading provider of poultry-based dishes and products throughout the Web.
+
+If you've shopped here before, welcome back! If this is your first visit, a wealth of delicious tastes and aromas await you. Please explore our Products page for a sampling of our tasty dishes.
+
+Cornucopia is an ideal entertaining resource for your next banquet or family gathering. While we specialize in turkey, we also provide delicious pastas, cheeses, hams, and side dishes. Cornucopia Online has everything you need, including entertaining tips and serving advice.
+
+We're dedicated to ensuring safe and speedy delivery of our food products. Please take advantage of our SureFresh delivery system employing air tight, fully insulated packages that keep contents cool for as long as 72 hours in external temperatures of over 100° Fahrenheit. We stand by our guarantee that the food products you receive from us are in the same fresh condition as when they left our facility.
+
+We use FedEx, UPS, or the U.S. Postal Service to ensure the timely delivery of your order. Orders submitted before 4pm ET can be scheduled to arrive the following business day (or any business day thereafter) for just $9.99!
+
+TEXT FOR NAVIGATION:
+
+Home (link to index.html)
+Products (link this one to #)
+Recipes (link to recipes.html)
+Newsletter (link this one and all the rest to #)
+My Account
+FAQs
+Support
+Contact Us
+
+TEXT FOR ADDRESS:
+Cornucopia Online  781 Bridge Street  Bristol, CT 06010  (800) 555 - 1088 cornucopiaonline@example.org
+
+=====================================================================
+
+~~~ CONTENT FOR RECIPIES.HTML PAGE ~~~
+
+Grilled Turkey
+
+Take your turkey outside this year and let your grill do the cooking. Grilled turkey is deliciously crisp with a tangy smoked flavor. Properly treated, turkey on the grill doesn't take any longer than turkey cooked in an oven.
+
+Ingredients
+
+1 turkey, 12 to 14 lbs.
+8-10 garlic cloves
+2 cups lightly packed Italian parsley leaves
+1 Tbsp. kosher salt
+2 tsp. freshly ground black pepper
+2 tsp. chili powder
+2 oranges
+1 stick unsalted butter
+2-4 cups reduced-sodium chicken stock
+1 large onion
+1 large carrot
+
+Instructions
+
+Remove neck and giblets from turkey cavity. Rinse turkey under cold water and pat dry with paper towels.
+Finely chop garlic and parsley and place in a small bowl. Add salt, pepper, and chili powder. Add grated orange zest.
+Mix in softened butter until all ingredients in the bowl are evenly distributed.
+Starting from neck-end of turkey, carefully separate skin from the breast meat. Push about half of butter mixture onto breast meat under skin and spread it out evenly.
+Cover top and sides of turkey with remaining butter mixture. Season turkey with salt and pepper.
+Quarter oranges and place sections in the turkey cavity. Use a trussing clamp to turn wings back, holding neck skin in place. Tie together with a cotton string.
+Put 2 cups of chicken stock, onion, and carrot inside a heavy-duty roasting pan. Place turkey, breast side up, on a roasting rack, and set rack inside pan. Cook the turkey over indirect medium heat to an internal temperature of 350°.
+Grill turkey for two to three hours, checking every half hour to verify that the roasting pan has not dried out. If pan looks dry, moisten it with the remaining chicken stock.
+Turkey is done when the internal temperature in the thighs is 180° and the internal temperature of the breast is 170°.
+Transfer to a cutting board and let sit for 20 to 30 minutes before carving.
+Use drippings as a base for a turkey gravy.
+
+Serves 10 to 12.

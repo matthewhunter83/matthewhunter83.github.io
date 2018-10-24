@@ -1,0 +1,46 @@
+/*
+    Name:   Matthew Hunter
+    Date:   October 15, 2018
+*/
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+nav {
+    margin: 1em auto 4em auto;
+    max-width: 700px;
+    background-color: #252525;
+    box-shadow: #0a0a0a 10px 10px 10px;
+}
+h1 {
+    font-size: 4em;
+    text-align: center;
+    padding: 1em 1em 0em;
+    
+}
+h2 {
+    font-size: 2em;
+    padding: 1em;
+    clear: both; 
+}
+a {
+    color: #888888;
+    text-decoration: none;
+}
+nav > ul > li > ul {
+    background-color: #444444;
+}
+nav > ul > li > ul li:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+nav > ul > li li {
+    padding: 1em;
+}
+img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 1em;
+}

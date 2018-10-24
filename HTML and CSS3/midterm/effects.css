@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*
+    Name:   Matthew Hunter
+    Date:   October 15, 2018
+*/
+article p {
+    box-shadow: #A24936 5px 5px 5px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(221, 127, 55), #A24936);
+}
+article {
+    box-shadow: #A24936 10px 10px 10px,  #A24936 -10px 10px 10px;
+}
+nav ul li:hover {
+    text-shadow: rgb(87, 121, 92) 2px 2px 5px;
+}
+article {
+    background: url(smallcorn.jpg) bottom left no-repeat, #ffffff;
+}
+article img {
+    opacity: .8;
+}
