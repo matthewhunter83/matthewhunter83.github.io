@@ -128,7 +128,7 @@ h2 {
     position: sticky;
     top: 4em;
     text-align: left;
-    z-index: 999;
+    z-index: 998;
 }
 
 h3 {
@@ -141,7 +141,7 @@ h3 {
     position: -webkit-sticky;
     position: sticky;
     top: 8.9em;
-    z-index: 998;
+    z-index: 999;
     background: #eeeeee;
 }
 
