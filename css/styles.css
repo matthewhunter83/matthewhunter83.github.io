@@ -185,7 +185,7 @@ a {
     text-decoration: none;
 }
 
-.image, .video {
+.image, .video, .team {
    margin: 1em auto;
    position: relative;
    width: 95%;
