@@ -185,7 +185,7 @@ a {
     text-decoration: none;
 }
 
-.image {
+.image, .video {
    margin: 1em auto;
    position: relative;
    width: 95%;
