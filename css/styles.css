@@ -210,3 +210,19 @@ img.slide {
 div.space {
     height: 1em;
 }
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 600px;
+    margin: 0 auto 1em auto;
+    padding-top: 5px;
+}
+a.button {
+    background-color: #e20074;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    border: 2px outset #79013f;
+    margin-left: 5px;
+}
