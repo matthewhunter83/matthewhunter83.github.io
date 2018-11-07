@@ -1,17 +1,160 @@
 <html>
-    <head>
-        <title>Certification Scorecard</title>
-        <style>
-            input#script {
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-        <form action="fmp://$/Ready3.fmp12/" method="GET">
-            <input id="script" type="text" name="script" value="say_hello">
-            <input type="text" name="$name" value="Matt">
-            <input type="submit" value="Submit">
-        </form>
-    </body>
+
+<head>
+    <title>Certification Scorecard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <form action="fmp://$/Ready3.fmp12/" method="GET">
+        <input id="script" type="text" name="script" value="say_hello">
+        <h2>Make It Personal</h2>
+        <fieldset>
+            <div>
+                <input id="moves" type="checkbox" name="$moves">
+                <label for="moves"><b>Did the Mobile Associate match needs to Un-carrier Moves? Not every single Un-carrier Move...just one, two, or a few of ‘em.</b></label>
+                <label for="moves">8 points</label>
+            </div>
+            <div>
+                <input id="self" type="checkbox" name="$self">
+                <label for="self">Was the Mobile Associate their Un-carrier self? Like for real?</label>
+                <label for="self">2 points</label>                
+            </div>
+            <div>
+                <input id="conversation" type="checkbox" name="$conversation">
+                <label for="conversation">"You first.” “No, you first!” Did the Mobile Associate have a two-way conversation?</label>
+                <label for="conversation">3 points</label>
+            </div>
+            <div>
+                <input id="matters" type="checkbox" name="$matters">
+                <label for="matters">Did the MA spend time on what matters...to the customer?</label>
+                <label for="matters">3 points</label>
+            </div>
+            <div>
+                <input id="fun" type="checkbox" name="$fun">
+                <label for="fun">Did the Mobile Associate and the customer have serious fun?</label>
+                <label for="fun">2 points</label>
+            </div>
+        </fieldset>
+        <h2>Explore & Discover</h2>
+        <fieldset>
+            <div>
+                <input id="network" type="checkbox" name="$network">
+                <label for="network"><b>Our network is badass! Did the Mobile Associate own our network?</b></label>
+                <label for="network">8 points</label>
+            </div>
+            <div>
+                <input id="pricing" type="checkbox" name="$pricing">
+                <label for="pricing">Do MAs know T-Mobile messaging & pricing statements?</label>
+                <label for="pricing">3 points</label>
+            </div>
+            <div>
+                <input id="demonstrate" type="checkbox" name="$demonstrate">
+                <label for="demonstrate">Did the Mobile Associate demonstrate products & features? #letmeshowyou</label>
+                <label for="demonstrate">3 points</label>
+            </div>
+            <div>
+                <input id="comparison" type="checkbox" name="$comparison">
+                <label for="comparison">We rock! Want proof? Did the MA offer products or services to show difference from the competition? Did the MA explain the cost differences between the customer current carrier and what T-Mobile can offer?</label>
+                <label for="comparison">3 points</label>
+            </div>
+            <div>
+                <input id="pace" type="checkbox" name="$pace">
+                <label for="pace">In a hurry? Not in a hurry? Did the Mobile Associate match the customer’s pace?</label>
+                <label for="pace">3 points</label>
+            </div>
+        </fieldset>
+        <h2>Problem Solved</h2>
+        <fieldset>
+            <div>
+                <input id="listen" type="checkbox" name="$listen">
+                <label for="listen">Did the Mobile Associate listen, show empathy & apologize? It’s kind of a big deal.</label>
+                <label for="listen">8 points</label>
+            </div>
+            <div>
+                <input id="routine" type="checkbox" name="$routine">
+                <label for="routine">Folks just paying their bill have feelings too. Did the MA appreciate routine transactions?</label>
+                <label for="routine">3 points</label>
+            </div>
+            <div>
+                <input id="ownership" type="checkbox" name="$ownership">
+                <label for="ownership">Did the Mobile Associate take ownership? Not ‘kind of’ – we’re talking ownership.</label>
+                <label for="ownership">4 points</label>
+            </div>
+            <div>
+                <input id="resources" type="checkbox" name="$resources">
+                <label for="resources">Did the Mobile Associate use resources and tools? (REMO, C2, PCC, etc.)</label>
+                <label for="resources">3 points</label>
+            </div>
+        </fieldset>
+        <h2>Guide the Purchase</h2>
+        <fieldset>
+            <div>
+                <input id="questions" type="checkbox" name="$questions">
+                <label for="questions"><b>Let’s make this all about you! Did the Mobile Associate ask personalized questions?</b></label>
+                <label for="questions">8 points</label>
+            </div>
+            <div>
+                <input id="business" type="checkbox" name="$business">
+                <label for="business">Did the Mobile Associate recognize the T-Mobile for Business lead? You know...ask about their job or business needs.</label>
+                <label for="business">3 points</label>
+            </div>
+            <div>
+                <input id="why" type="checkbox" name="$why">
+                <label for="why">We are so much better than those other guys. Did the MA explain Why T-Mobile?</label>
+                <label for="why">4 points</label>
+            </div>
+            <div>
+                <input id="expertise" type="checkbox" name="$expertise">
+                <label for="expertise">Calling all experts. Did the Mobile Associate share product, service & network expertise?</label>
+                <label for="expertise">3 points</label>
+            </div>
+            <div>
+                <input id="recommendations" type="checkbox" name="$recommendations">
+                <label for="recommendations">“I rock the....” Did the MA give personal recommendations?</label>
+                <label for="recommendations">2 points</label>
+            </div>
+            <div>
+                <input id="hesitations" type="checkbox" name="$hesitations">
+                <label for="hesitations">Did the Mobile Associate overcome hesitations?</label>
+                <label for="hesitations">3 points</label>
+            </div>
+            <div>
+                <input id="drive" type="checkbox" name="$drive">
+                <label for="drive">Bottom line. Did the Mobile Associate drive the purchase decision?</label>
+                <label for="drive">3 points</label>
+            </div>
+        </fieldset>
+        <h2>Stay Connected</h2>
+        <fieldset>
+            <div>
+                <input id="expectations" type="checkbox" name="$expectations">
+                <label for="expectations"><b>Did the Mobile Associate set the right expectations? No bill shock up in here.</b></label>
+                <label for="expectations">8 points</label>
+            </div>
+            <div>
+                <input id="selfserve" type="checkbox" name="$selfserve">
+                <label for="selfserve">Teach them to care for themselves. Did the MA review the self-serve options?</label>
+                <label for="selfserve">3 points</label>
+            </div>
+            <div>
+                <input id="connect" type="checkbox" name="$connect">
+                <label for="connect">Call me, maybe. Did the Mobile Associate connect on their terms?</label>
+                <label for="connect">2 points</label>
+            </div>
+            <div>
+                <input id="referrals" type="checkbox" name="$referrals">
+                <label for="referrals">Did the MA offer to help friends & family? Give me an R-E-F-E-R-R-A-L-S!</label>
+                <label for="referrals">3 points</label>
+            </div>
+            <div>
+                <input id="feedback" type="checkbox" name="$feedback">
+                <label for="feedback">Tell it to us straight! Did the Mobile Associate ask for customer feedback?</label>
+                <label for="feedback">2 points</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
 </html>

@@ -226,3 +226,64 @@ a.button {
     border: 2px outset #79013f;
     margin-left: 5px;
 }
+input#script {
+    display: none;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+fieldset div {
+    display: flex;
+    align-items: stretch;
+    margin: .5em 1em;
+}
+fieldset div label {
+    flex: 1 1 auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 5px 0px 0px 5px;
+    color: #cccccc;
+}
+fieldset div label:nth-of-type(2) {
+    flex: 0 1 2em;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+}
+fieldset div input {
+    flex: 0 0 auto;
+    display: none;
+}
+fieldset div label:hover {
+    color: black;
+}
+
+fieldset div input[type="checkbox"]:checked + label {
+    color: black;
+    background-color: white;
+}
+fieldset div input[type="checkbox"]:checked + label + label {
+    color: white;
+    background-color: black;
+}
+form h2 {
+    font-family: Tele-Fet;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: #e20074;
+    padding: 1em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0em;
+    text-align: left;
+    z-index: 998;
+}
