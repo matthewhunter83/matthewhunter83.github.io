@@ -81,6 +81,33 @@ section.day {
     align-content: flex-start;
     align-items: center;
 }
+section.leaderboard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+section.leaderboard a {
+    color: white;
+}
+div.leaderboard-day, div.leaderboard-week, div.leaderboard-total {
+    min-width: 8em;
+    max-width: 8em;
+    padding: 3.5em 0;
+    background-color: #333333;
+    text-align: center;
+    flex: 1 0 8em;
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: #c1c1c1 .25em .25em .75em;
+}
+div.leaderboard-week, div.leaderboard-total {
+    font-family: Tele-Ult;
+    background-color: #1a1a1a;
+}
+
 div.facilitator-guide {
     margin: 1em;
     height: 8.57em;
@@ -97,7 +124,6 @@ div.facilitator-guide {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 .facilitator-guide.kci {
     background: url(https://cdn.discordapp.com/attachments/499662815041290241/505036169302769667/kciwireless.png) 
