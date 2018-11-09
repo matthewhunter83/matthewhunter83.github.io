@@ -31,7 +31,7 @@
 html {
     font-family: Tele-Nor;
     color: #1A1A1A;
-    background-color: #e20074;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
@@ -87,6 +87,22 @@ section.leaderboard {
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
+}
+section.users {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+div.user {
+    width: 8em;
+    height: 8em;
+    background-color: #eeeeee;
+    border-radius: .5em;
+    margin: 1em;
+}
+section.users a {
+    font-size: .5em;
 }
 section.leaderboard a {
     color: white;
@@ -252,6 +268,20 @@ a.button {
     border: 2px outset #79013f;
     margin-left: 5px;
 }
+
+input[type=submit] {
+    background-color: #e20074;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.1em;
+    border: 2px outset #79013f;
+    margin: 0em 1em 1em;
+    position: fixed;
+    z-index: 1000;
+    top: 1em;
+    right: 0em;
+}
 input#script {
     display: none;
 }
@@ -276,7 +306,7 @@ fieldset div label {
     color: #cccccc;
 }
 fieldset div label:nth-of-type(2) {
-    flex: 0 1 2em;
+    flex: 0 0 2em;
     text-align: center;
     border: 1px solid #cccccc;
     border-radius: 0px 5px 5px 0px;
@@ -309,7 +339,7 @@ form h2 {
     padding: 1em;
     position: -webkit-sticky;
     position: sticky;
-    top: 0em;
+    top: 4em;
     text-align: left;
     z-index: 998;
 }
