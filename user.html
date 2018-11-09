@@ -1,0 +1,30 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>Users</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+</head>
+
+<body name="top">
+    <header>
+        <nav>
+            <a class="back" href="?script=close_users_window"><i class="fas fa-chevron-left"></i></a>
+            <a class="title" href="#top">Users</a>
+            <a class="users" href="?script=refresh_users"><i class="fas fa-sync-alt"></i></a>
+            <a class="users" href="?script=get_tokens"><i class="fas fa-chart-bar"></i></a>
+        </nav>
+    </header>
+    <h2>Assigned Users</h2>
+    <section class="users">
+        <a href="#"><div class="user"></div>{{username}}</a>
+    </section>
+    <h2>Unassigned Users</h2>
+    <section class="users">
+        <a href="?script=assign_user"><div class="user"></div>{{username}}</a>
+    </section>
+</body>
+
+</html>
