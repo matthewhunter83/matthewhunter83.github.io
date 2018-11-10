@@ -108,6 +108,17 @@ section.users a {
 section.leaderboard a {
     color: white;
 }
+div.loader {
+    display: flex;
+    justify-content: center;
+    font-family: Tele-Ult;
+    font-size: 17vw;
+    text-align: center;
+    color: #cccccc;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+}
 div.leaderboard-day, div.leaderboard-week, div.leaderboard-total {
     min-width: 8em;
     max-width: 8em;
