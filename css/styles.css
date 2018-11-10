@@ -372,15 +372,14 @@ div.week_tokens {
     flex: 1 1 auto;
     font-size: .75em;
     padding: .25em;
-    background-color: white;
     margin: 0em;
 }
 div.day_tokens {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #1a1a1a;
+    background-color: #cfcfc4;
     border-radius: .2em;
-    margin: 1em 0;
+    margin: .5em 0;
     color: white;
     font-family: Tele-Nor;
     padding: 1em;
