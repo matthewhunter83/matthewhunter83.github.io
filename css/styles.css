@@ -272,6 +272,7 @@ div.buttons {
     margin: 0 auto 1em auto;
     padding-top: 5px;
 }
+
 a.button {
     background-color: #e20074;
     padding: 10px;
@@ -383,4 +384,26 @@ div.day_tokens {
     color: white;
     font-family: Tele-Nor;
     padding: 1em;
+}
+section.certification {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+section.certification a.button {
+    background-color: #e20074;
+    vertical-align: middle;
+    text-align: center;
+    padding: .5em;
+    color: white;
+    border-radius: 3px;
+    border: 2px outset #79013f;
+    margin: 1em;
+    
+}
+section.certification div {
+    flex: 1 1 auto;
+}
+section.certification div:nth-of-type(2) {
+    flex: 0 0 3em;
 }
