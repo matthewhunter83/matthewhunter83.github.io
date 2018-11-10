@@ -1,7 +1,7 @@
 <!doctype html>
 
 <head>
-    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <title>Users</title>
@@ -11,20 +11,46 @@
 <body name="top">
     <header>
         <nav>
-            <a class="back" href="?script=close_users_window"><i class="fas fa-chevron-left"></i></a>
-            <a class="title" href="#top">Users</a>
+            <a class="back" href="?script=close_window"><i class="fas fa-chevron-left"></i></a>
+            <a class="title" href="#top">User</a>
             <a class="users" href="?script=refresh_users"><i class="fas fa-sync-alt"></i></a>
             <a class="users" href="?script=get_tokens"><i class="fas fa-chart-bar"></i></a>
         </nav>
     </header>
-    <h2>Assigned Users</h2>
+    <h2>{{name}}</h2>
     <section class="users">
-        <a href="#"><div class="user"></div>{{username}}</a>
+        <a href="#">
+            <div class="user"></div>{{username}}
+        </a>
     </section>
-    <h2>Unassigned Users</h2>
-    <section class="users">
-        <a href="?script=assign_user"><div class="user"></div>{{username}}</a>
+    <h3>Tokens</h3>
+    <section class="tokens">Total Tokens<br>{{total_tokens}}<br>{{total_maximum}}<br>{{total_minimum}}</section>
+    <section class="tokens">
+        <div class="week_tokens">Week 1<br>{{week_1_tokens}}<br>{{week_1_maximum}}<br>{{week_1_minimum}}
+            <div class="day_tokens">Day 1<br>{{day_1_tokens}}<br>{{day_1_maximum}}<br>{{day_1_minimum}}</div>
+            <div class="day_tokens">Day 2<br>{{day_2_tokens}}<br>{{day_2_maximum}}<br>{{day_2_minimum}}</div>
+            <div class="day_tokens">Day 3<br>{{day_3_tokens}}<br>{{day_3_maximum}}<br>{{day_3_minimum}}</div>
+            <div class="day_tokens">Day 4<br>{{day_4_tokens}}<br>{{day_4_maximum}}<br>{{day_4_minimum}}</div>
+            <div class="day_tokens">Day 5<br>{{day_5_tokens}}<br>{{day_5_maximum}}<br>{{day_5_minimum}}</div>
+        </div>
+        <div class="week_tokens">Week 2<br>{{week_2_tokens}}<br>{{week_2_maximum}}<br>{{week_2_minimum}}
+            <div class="day_tokens">Day 6<br>{{day_6_tokens}}<br>{{day_6_maximum}}<br>{{day_6_minimum}}</div>
+            <div class="day_tokens">Day 7<br>{{day_7_tokens}}<br>{{day_7_maximum}}<br>{{day_7_minimum}}</div>
+            <div class="day_tokens">Day 8<br>{{day_8_tokens}}<br>{{day_8_maximum}}<br>{{day_8_minimum}}</div>
+            <div class="day_tokens">Day 9<br>{{day_9_tokens}}<br>{{day_9_maximum}}<br>{{day_9_minimum}}</div>
+            <div class="day_tokens">Day 10<br>{{day_10_tokens}}<br>{{day_10_maximum}}<br>{{day_10_minimum}}</div>
+        </div>
+        <div class="week_tokens">Week 3<br>{{week_3_tokens}}<br>{{week_3_maximum}}<br>{{week_3_minimum}}
+            <div class="day_tokens">Day 11<br>{{day_11_tokens}}<br>{{day_11_maximum}}<br>{{day_11_minimum}}</div>
+            <div class="day_tokens">Day 12<br>{{day_12_tokens}}<br>{{day_12_maximum}}<br>{{day_12_minimum}}</div>
+            <div class="day_tokens">Day 13<br>{{day_13_tokens}}<br>{{day_13_maximum}}<br>{{day_13_minimum}}</div>
+            <div class="day_tokens">Day 14<br>{{day_14_tokens}}<br>{{day_14_maximum}}<br>{{day_14_minimum}}</div>
+            <div class="day_tokens">Day 15<br>{{day_15_tokens}}<br>{{day_15_maximum}}<br>{{day_15_minimum}}</div>
+        </div>
+
     </section>
+
+
 </body>
 
 </html>

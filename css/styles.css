@@ -355,3 +355,33 @@ form h2 {
     text-align: left;
     z-index: 998;
 }
+section.tokens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: Tele-Ult;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+div.week_tokens {
+    text-align: center;
+    font-family: Tele-Ult;
+    color: #1a1a1a;
+    flex: 1 1 auto;
+    font-size: .75em;
+    padding: .25em;
+    background-color: white;
+    margin: 0em;
+}
+div.day_tokens {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #1a1a1a;
+    border-radius: .2em;
+    margin: 1em 0;
+    color: white;
+    font-family: Tele-Nor;
+    padding: 1em;
+}
