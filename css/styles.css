@@ -407,3 +407,13 @@ section.certification div {
 section.certification div:nth-of-type(2) {
     flex: 0 0 3em;
 }
+div.employee_select {
+    display: flex;
+    justify-content: center;
+}
+select#employee {
+    padding: 1em;
+    margin: 1em;
+    background: transparent;
+    width: 300px;
+}
