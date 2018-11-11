@@ -272,6 +272,7 @@ div.buttons {
     margin: 0 auto 1em auto;
     padding-top: 5px;
 }
+
 a.button {
     background-color: #e20074;
     padding: 10px;
@@ -354,4 +355,55 @@ form h2 {
     top: 4em;
     text-align: left;
     z-index: 998;
+}
+section.tokens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: Tele-Ult;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+div.week_tokens {
+    text-align: center;
+    font-family: Tele-Ult;
+    color: #1a1a1a;
+    flex: 1 1 auto;
+    font-size: .75em;
+    padding: .25em;
+    margin: 0em;
+}
+div.day_tokens {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #cfcfc4;
+    border-radius: .2em;
+    margin: .5em 0;
+    color: white;
+    font-family: Tele-Nor;
+    padding: 1em;
+}
+section.certification {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+section.certification a.button {
+    background-color: #e20074;
+    vertical-align: middle;
+    text-align: center;
+    padding: .5em;
+    color: white;
+    border-radius: 3px;
+    border: 2px outset #79013f;
+    margin: 1em;
+    
+}
+section.certification div {
+    flex: 1 1 auto;
+}
+section.certification div:nth-of-type(2) {
+    flex: 0 0 3em;
 }
