@@ -407,3 +407,24 @@ section.certification div {
 section.certification div:nth-of-type(2) {
     flex: 0 0 3em;
 }
+div.employee_select {
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+select#employee {
+    font-size: 1.5em;
+    height: 3em;
+    width: 90vw;
+    border-radius: 0;
+}
+input[type=submit].button {
+    position: static;
+    margin: 1em 5vw;
+}
+span.gray {
+    color: #5e5e5e;
+}
