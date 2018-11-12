@@ -11,13 +11,30 @@
 <body name="top">
     <header>
         <nav>
-            <a class="back" href=""><i class="fas fa-chevron-left"></i></a>
+            <a class="back" href="?script=close_window"><i class="fas fa-chevron-left"></i></a>
             <a class="title" href="#top">Scorecard</a>
         </nav>
         <a href="#top" class="fas fa-chevron-circle-up"></a>
     </header>
-    <form action="" method="GET">
+    <form action="" method="GET" >
         <input id="script" type="text" name="script" value="submit_scorecard">
+        <input id="id" type="text" name="$id" value="{{id}}">
+        <input id="scorecard" type="text" name="$scorecard" value="{{scorecard}}">
+        <h2>Customer</h2>
+        <div class="customer_select"><select name="$customer" id="customer">
+            <option value="">Select Customer</option>
+            <option value="Amani">Amani</option>
+            <option value="Angela">Angela</option>
+            <option value="Brady">Brady</option>
+            <option value="Brian">Brian</option>
+            <option value="Dan">Dan</option>
+            <option value="Janet">Janet</option>
+            <option value="Juan">Juan</option>
+            <option value="Kevin">Kevin</option>
+            <option value="Malcolm">Malcolm</option>
+            <option value="Mika">Mika</option>
+            <option value="Steve">Steve</option>
+        </select></div>
         <h2>Make It Personal</h2>
         <fieldset>
             <div>
