@@ -173,7 +173,24 @@ div.facilitator-guide h4 {
     font-size: 2em;
     z-index: 1000;
     opacity: .7;
-    background: radial-gradient(white,white,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
+    border-radius: 1em;
+}
+.fa-chalkboard-teacher {
+    position: fixed;
+    bottom: 1em;
+    right: 3em;
+    font-size: 2em;
+    z-index: 1000;
+    opacity: .7;
+    border-radius: 1em;
+}
+.fa-headphones {
+    position: fixed;
+    bottom: 1em;
+    right: 5em;
+    font-size: 2em;
+    z-index: 1000;
+    opacity: .7;
     border-radius: 1em;
 }
 
