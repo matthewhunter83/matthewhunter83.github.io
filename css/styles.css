@@ -315,6 +315,12 @@ input[type=submit] {
 input#script {
     display: none;
 }
+input#id {
+    display: none;
+}
+input#skill_practice {
+    display: none;
+}
 fieldset {
     display: flex;
     flex-direction: column;
