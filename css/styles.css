@@ -430,7 +430,7 @@ section.certification div {
 section.certification div:nth-of-type(2) {
     flex: 0 0 3em;
 }
-div.employee_select {
+div.employee_select, div.customer_select {
     padding: 0;
     margin:0;
     display: flex;
@@ -438,7 +438,10 @@ div.employee_select {
     align-items: center;
     flex-flow: column nowrap;
 }
-select#employee {
+div.customer_select {
+    padding: 1em 0;
+}
+select#employee, select#customer {
     font-size: 1.5em;
     height: 3em;
     width: 90vw;
