@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Tele-Fet;
+    src: url('../fonts/tele-groteskfet.eot') format('embedded-opentype'),
+        url('../fonts/tele-groteskfet.woff2') format('woff2'),
+        url('../fonts/tele-groteskfet.woff') format('woff');
+}
+
+@font-face {
+    font-family: Tele-Hal;
+    src: url('../fonts/tele-groteskhal.eot') format('embedded-opentype'),
+        url('../fonts/tele-groteskhal.woff2') format('woff2'),
+        url('../fonts/tele-groteskhal.woff') format('woff');
+}
+
+@font-face {
+    font-family: Tele-Nor;
+    src: url('../fonts/tele-grotesknor.eot') format('embedded-opentype'),
+        url('../fonts/tele-grotesknor.woff2') format('woff2'),
+        url('../fonts/tele-grotesknor.woff') format('woff');
+}
+
+@font-face {
+    font-family: Tele-Ult;
+    src: url('../fonts/tele-groteskult.eot') format('embedded-opentype'),
+        url('../fonts/tele-groteskult.woff2') format('woff2'),
+        url('../fonts/tele-groteskult.woff') format('woff');
+}
+html {
+    font-family: Tele-Nor;
+    font-size: 6pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+@page {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: Tele-Fet;
+    font-weight: normal;
+    color: white;
+    background-color: black;
+    padding: 8pt;
+    font-size: 16pt;
+    margin: 0;
+}
+h2 {
+    font-family: Tele-nor;
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: normal;
+    margin: 0;
+    background-color: #e20074;
+    padding: 1pt;
+    border-left: .25pt solid black;
+    border-bottom: .25pt solid black;
+    border-right: .25pt solid black;
+}
+h4 {
+    font-family: Tele-Fet;
+    font-weight: Normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 6pt;
+    background-color: #e20074;
+    color: white;
+    margin:0;
+}
+h5 {
+    font-family: Tele-fet;
+    font-weight: normal;
+    font-size: 6pt;
+    padding: 4pt 1pt;
+    margin: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+b {
+    font-family: Tele-Hal;
+    font-weight: normal;
+}
+div.headers, fieldset div {
+    display: flex;
+}
+h5:first-of-type {
+    width: 40%;
+    text-align: left;
+
+}
+h5:nth-of-type(4) {
+    width: 50%;
+}
+h5:nth-of-type(2), h5:nth-of-type(3) {
+    width: 5%;
+}
+fieldset {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+fieldset div label, fieldset div input {
+    padding: 1pt;
+    margin: 0;
+    border-bottom: .25pt solid black;
+    border-left: .25pt solid black;
+}
+fieldset div label:nth-of-type(3) {
+    width: 40%;
+}
+fieldset div label:nth-of-type(4) {
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #a6a6a6;
+}
+fieldset div label:nth-of-type(5), fieldset div label:nth-of-type(6) {
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+fieldset div label:nth-of-type(7), fieldset div label:nth-of-type(8) {
+    width: 50%;
+    border-right: .25pt solid black;
+}
+.fa-check {
+    color: #03c03c;
+}
+.fa-times {
+    color: #ff6961;
+}
+.fa-star {
+    color: #e20074;
+}
+header.screen,
+input#script,
+input#id,
+input#scorecard,
+h2:nth-of-type(1),
+input[type=submit],
+div.customer_select,
+fieldset div input,
+fieldset div label:nth-of-type(1),
+fieldset div label:nth-of-type(2),
+fieldset div input[type="checkbox"]:not(:checked) + label + label + label + label + label,
+fieldset div input[type="checkbox"]:checked + label + label + label + label + label + label,
+fieldset div input[type="checkbox"]:checked + label + label + label + label + label + label + label,
+fieldset div input[type="checkbox"]:not(:checked) + label + label + label + label + label + label + label + label {
+    display: none;
+}
