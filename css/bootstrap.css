@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  margin: 5em 0 0 0;
+  margin: 3em 0 0 0;
   background-color: #eeeeee;
   /*background: url(../images/hero/background.png) center center no-repeat;
     background-attachment: fixed;
@@ -52,7 +52,8 @@ article {
 }
 
 .navbar {
-  background-color: #e20074;
+  background-color: black;
+  vertical-align: middle;
 }
 
 nav img {
@@ -182,7 +183,7 @@ h2 {
   text-transform: uppercase;
   margin: 0 auto 1em;
   max-width: 600px;
-  background-color: black;
+  background-color: #e20074;
   padding: 1em;
   text-align: left;
 }
@@ -528,4 +529,19 @@ header.print {
 
 fieldset div input[type="checkbox"]+label+label+label, fieldset div input[type="checkbox"]+label+label+label+label, fieldset div input[type="checkbox"]+label+label+label+label+label, fieldset div input[type="checkbox"]+label+label+label+label+label+label, fieldset div input[type="checkbox"]+label+label+label+label+label+label+label, fieldset div input[type="checkbox"]+label+label+label+label+label+label+label+label {
   display: none;
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 0.8em;
+    vertical-align: middle;
+    line-height: 1.9em;
+  }
+}
+@media only screen and (max-width: 340px) {
+  h1 {
+    font-size: 0.6em;
+    vertical-align: middle;
+    line-height: 2.4em;
+  }
 }
