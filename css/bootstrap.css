@@ -249,7 +249,7 @@ a.alert-link {
   background-color: initial;
 }
 
-div.image a {
+div.image a, div.video a {
   display: flex;
   justify-content: center;
   align-items: center;
