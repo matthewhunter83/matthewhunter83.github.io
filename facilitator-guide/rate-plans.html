@@ -1,88 +1,264 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <title>Rate Plans</title>
-    <meta name="viewport" content="initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://matthewhunter83.github.io/css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Rate Plans</title>
+  <meta name="viewport" content="initial-scale=1.0" />
 </head>
 <body name="top">
-    <header>
-        <nav>
-            <a class="back" href="?script=close_window"><i class="fas fa-chevron-left"></i></a>
-            <a class="title" href="#top">Rate Plans</a>
-            <a class="users" href="?script=get_users"><i class="fas fa-users"></i></a>
-        </nav>
-        <a href="#top" class="fas fa-chevron-circle-up"></a>
-        <a href="?script=move_users_to_talk" class="fas fa-chalkboard-teacher"></a>
-        <a href="?script=move_users_to_radio" class="fas fa-headphones"></a>
-    </header>
-    <article>
-        <div class="space"></div>
-<!--Comments and examples - Collapsible section of code
-
-Slide example. Replace [[Image URL]] with the url for the image in both locations. Slides should be placed logically between facilitator guide elements which may mean sometimes they are inbetween two paragraphs or lists.
-
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=[[Image URL]]"><img class="slide" src="[[Image URL]]"></a></div>
-
-Topic example. This creates a magenta bar separating major sections of content and matches the magenta bars on the orientation guide.
-
-        <h2>[[Topic]]</h2>
-
-Action example. This creates a gray bar within a topic to further separate larger sections into smaller ones and is in the left column of the page.  Actions should not be present before the first topic.
-
-        <h3>[[Action]]</h3>
-
-Segment Topic example.  Page 3 of the Un-carrier Experience Principles facilitator guide has a few examples of this infrequently used element with the words Customer Focus and Simplicity.  Segment Topics are not sticky so they won't cling to the top of the window on the html, but they look different than bolded text on the rendered html.
-
-        <h4>[[Segment Topic]]</h4>
-
-Paragraph example.  Most of the facilitator guide is written in paragraphs.  Each <p> section should only contain one paragraph with no line breaks.  Inside of paragraphs, please use the <b></b> tag for bolded text, <i></i> for italicized text, <u></u> for underlined text, and <span class="magenta"></span> for magenta text enclosing the relevant text.
-
-        <p>[[Facilitator guide paragraph]]</p>
-
-Unordered/Ordered list example.  These are overused in the facilitator guides and are the most time consuming to set up because they are often nested many levels, and sometimes nested within paragraphs (<p>). Here as an example of how these should look, note where the text is located in the [[Item 2]] example in relation to it's nested list:
-
-<ul>
-    <li>[[Item 1]]</li>
-    <li>[[Item 2]]
-        <ul>
-            <li>[[Sub-item 1]]</li>
-            <li>[[Sub-item 2]]</li>
+  <header>
+    <nav class="navbar navbar-dark fixed-top">
+      <a class="navbar-brand" href="#"><img src="../images/logo.svg" width="30" height="25" class="d-inline-block align-top" alt="">
+        <h1>Rate Plans</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="?script=close_window">Facilitator Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=get_users">Users</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=move_users_to_radio">Move learners to radio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=move_users_to_talk">Move learners to talk</a>
+          </li>
         </ul>
-    </li>
-    <li>[[Item 3]]</li>
-</ul>
-
-Replace <ul></ul> with <ol></ol> for ordered lists, and don't worry if the type of ordering is different than what the facilitator guide shows (T-Mobile is pretty inconsistent about it's ording system). Here are some samples to copy:
-
-        <ul>
-            <li></li>
-        </ul>
-
-        <ol>
-            <li></li>
-        </ol>
--->
-
-<!--Don't modify anything above here except for the [[Title]] in the <head> and <header>, which should match the title on the index page start code on line 70 two tabs in (align with arrows above and below).
-        ⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣⇣
--->
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613372921282571/Slide1.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613372921282571/Slide1.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613399609769994/Slide2.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613399609769994/Slide2.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613415942389783/Slide3.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613415942389783/Slide3.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613431184228353/Slide4.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613431184228353/Slide4.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613445432279073/Slide5.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613445432279073/Slide5.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613457898012683/Slide6.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613457898012683/Slide6.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613471709593611/Slide7.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613471709593611/Slide7.png"></a><div class="buttons"><a class="button" href="fmp://$/filename?.fmp12/?script=create_teams&$user_limit=3">Create Teams</a><a class="button" href="fmp://$/filename?.fmp12/?script=delete_teams">Destroy Teams</a></div></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613487027453972/Slide8.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613487027453972/Slide8.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613502357635072/Slide9.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613502357635072/Slide9.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613512310456321/Slide10.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613512310456321/Slide10.png"></a></div>
-        <div class="image"><a href="fmp://$/filename?.fmp12/?script=send_post&$channel=text&$image_url=https://cdn.discordapp.com/attachments/498199681986461718/499613526784999424/Slide11.png"><img class="slide" src="https://cdn.discordapp.com/attachments/498199681986461718/499613526784999424/Slide11.png"></a></div>
-<!--    
-        ⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡⇡
-Don't modify anything below here-->    
-    </article>
-    <div class="space"></div>
+      </div>
+    </nav>
+  </header>
+  <article class="shadow">
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/ready-logo.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/title.png"></a></div>
+    <h2>Intro</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Purpose</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>Mobile Associates will learn about T-Mobile postpaid and prepaid plans, and how to make a personalized plan recommendation, based on each customer’s needs.</p>
+          <p>After successfully completing this module, they will be able to:</p>
+          <ul>
+            <li>Describe T-Mobile’s postpaid rate plans.</li>
+            <li>Describe T-Mobile’s prepaid rate plans.</li>
+            <li>Match rate plans with customer needs/lifestyle.</li>
+            <li>Recommend a rate plan based on customer needs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/1.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Explain</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>Rate plans are the foundation of the service we provide to customers.</li>
+            <li>This includes postpaid and prepaid plans.</li>
+            <li>T-Mobile ONE, our flagship and industry-leading plan, created the end of customers having to worry about how much high-speed data they need.</li>
+            <li>Customers don’t like getting a bill that is much more than they expected due to various taxes and fees, so being the Un-carrier, we solved that pain point. </li>
+            <li>T-Mobile ONE, with taxes and fees included, removes the guesswork from how much the monthly bill is really going to be.</li>
+            <li>While the basics of T-Mobile ONE are straightforward, there are some variations and details about the plan that are important to understand.</li>
+            <li>T-Mobile Essentials provides customers with an entry level plan with only the necessities at an affordable price.</li>
+            <li>Many customers still prefer the flexibility of prepaid.</li>
+            <li>Customers will rely on your expertise to answer questions about available plans, and which might work best for them.</li>
+            <li>During your DIY activity, you’ll dig into the details of T-Mobile rate plans.</li>
+            <li>Be prepared to explain the benefits of each T-Mobile rate plan.</li>
+            <li>In C2, you’ll notice lots of other rate plans – most of which are plans we offered in the past but are now grandfathered.</li>
+            <li>Plans are considered “grandfathered” when they are no longer offered for sale, even though existing customers may still have them.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2>DIY Activity</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Purpose</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>To enable Mobile Associates to differentiate between T-Mobile ONE offers, learn about prepaid plans, and make a personalized rate plan recommendation by matching customer needs to plan benefits.</p>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/2.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Instructions</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p><strong>TIMING: 5 min setup, 1 hr 15 min DIY research, 15 WBT 15 min debrief</strong></p>
+          <ol>
+            <li>Research the various postpaid and prepaid plans T-Mobile offers and how we stack up against the competition.</li>
+            <li>While completing the DIY activity consider:
+              <ul>
+                <li>Benefits of to each rate plan.</li>
+                <li>What a customer would want to know.</li>
+                <li>Key differences that apply to each rate plan.</li>
+                <li>What a customer could say that would let you know this plan is a good fit.</li>
+              </ul>
+            </li>
+            <li>Complete the Explore the Possibilities of T-Mobile One WBT in Un-carrier Academy.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/3.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Debrief</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>What does a customer gain with ONE Plus (<a href="https://c2.t-mobile.com/docs/DOC-428707">428707</a>) and what does it cost?
+              <ul>
+                <li>When combined with T-Mobile ONE, the ONE Plus add-on provides customers with 20GB of 4G LTE mobile hotspot, HD video, 2x international roaming speeds, plus unlimited Gogo Inflight Wi-Fi, Name ID and Voicemail to text for voice lines.</li>
+              </ul>
+            </li>
+            <li>What customer types would benefit from T-Mobile Essentials (<a href="https://c2.t-mobile.com/docs/DOC-442994">442994</a>)?
+              <ul>
+                <li>Customers who only want the essentials at a lower price point</li>
+                <li>Customers who don’t travel much or have a need for features like ONE Plus or Gogo Inflight Wi-Fi</li>
+              </ul>
+            </li>
+            <li>What are the differences between T-Mobile ONE and T-Mobile ONE No Credit Check?
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th scope="col">
+                      T-Mo One
+                    </th>
+                    <th scope="col">
+                      T-Mo One NCC
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Credit Check Required</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Deposit Required</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Simple Global</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Autopay Eligible</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Netflix On Us</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Carrier Freedom</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>EIP</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>International Roaming Calls</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr
+                  <tr>
+                    <td>Global Data Passes</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Line Limit</td>
+                    <td>12</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/4.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Debrief</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>What is T-Mobile ONE 55+?
+              <ul>
+                <li>T-Mobile ONE plan at a discounted rate</li>
+                <li>Only available to customers age 55 or older</li>
+              </ul>
+            </li>
+            <li>What’s different about <a href="https://c2.t-mobile.com/docs/DOC-438375">T-Mobile ONE Military</a>? Who’s eligible?
+              <ul>
+                <li>T-Mobile ONE plan at a discounted rate</li>
+                <li>Available to verified past or present members of an eligible US military branch, or Gold Star Family members</li>
+              </ul>
+            </li>
+            <li>How is T-Mobile ONE prepaid different than T-Mobile ONE No Credit Check?
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/5.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/6.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/7.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/qa.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/are-you-with-us.png"></a></div>
+  </article>
+  <div class="space"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
