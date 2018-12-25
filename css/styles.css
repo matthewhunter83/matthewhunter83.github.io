@@ -299,7 +299,7 @@ a.button {
     margin-left: 5px;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #e20074;
     padding: 10px;
     color: white;

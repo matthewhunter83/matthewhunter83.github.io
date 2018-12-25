@@ -38,7 +38,19 @@ const scoreCalc = function () {
     if ( document.getElementById('referrals').checked ) { score = score + 3 }
     if ( document.getElementById('feedback').checked ) { score = score + 2 }
 
-    document.getElementById('submit').value = `Score: ${score}`
+    if ( score === 100 ) {
+        document.getElementById('submit').innerHTML = `${score} <i class="fas fa-grin-stars"></i>`
+    } else if ( score >= 85 ) {
+        document.getElementById('submit').innerHTML = `${score} <i class="fas fa-smile"></i>`
+    } else if ( score >= 50 ) {
+        document.getElementById('submit').innerHTML = `${score} <i class="fas fa-meh"></i>`
+    } else {
+        document.getElementById('submit').innerHTML = `${score} <i class="fas fa-frown-open"></i>`
+    }
+    
 }
 
 scoreCalc()
+function myFunction() {
+    window.print();
+}
