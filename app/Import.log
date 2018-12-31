@@ -1,0 +1,11 @@
+﻿Timestamp	Filename	Error	Message
+2018-12-31 15:39:36.392 -0600	Ready!.fmp12	0	Import of script steps from clipboard started
+2018-12-31 15:39:36.413 -0600	send_post	0	script steps imported : 1
+2018-12-31 15:39:36.413 -0600	Ready!.fmp12	0	Import completed
+2018-12-31 15:58:54.644 -0600	Ready!.fmp12	0	Import of script steps from clipboard started
+2018-12-31 15:58:54.646 -0600	set_class	0	script steps imported : 1
+2018-12-31 15:58:54.646 -0600	Ready!.fmp12	0	Import completed
+2018-12-31 16:02:00.126 -0600	Ready!.fmp12	0	Import of script steps from clipboard started
+2018-12-31 16:02:00.135 -0600	send_post::21::Insert from URL::Field	10	Attribute “id” missing.
+2018-12-31 16:02:00.135 -0600	send_post	0	script steps imported : 1
+2018-12-31 16:02:00.135 -0600	Ready!.fmp12	0	Import completed
