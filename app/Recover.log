@@ -1,7 +1,0 @@
-﻿Timestamp	Filename	Error	Message
-2019-01-02 15:52:50.474 -0600	Ready!.fmp12	0	*** Started consistency check of improperly closed file, total of 855 block(s) to check
-2019-01-02 15:52:50.512 -0600	Ready!.fmp12	0	Reset maximum block sequence number to 16843756
-2019-01-02 15:52:50.513 -0600	Ready!.fmp12	0	*** Completed consistency check, checked 855 block(s)
-2019-01-02 15:55:35.997 -0600	Ready!.fmp12	0	*** Started consistency check of improperly closed file, total of 855 block(s) to check
-2019-01-02 15:55:36.004 -0600	Ready!.fmp12	0	Reset maximum block sequence number to 16843828
-2019-01-02 15:55:36.005 -0600	Ready!.fmp12	0	*** Completed consistency check, checked 855 block(s)
