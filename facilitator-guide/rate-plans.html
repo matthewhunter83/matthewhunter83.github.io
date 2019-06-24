@@ -1,91 +1,387 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/bootstrap.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
-    <title>Rate Plans</title>
-    <meta name="viewport" content="initial-scale=1.0" />
-  </head>
-  <body name="top">
-    <header>
-      <nav class="navbar navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"
-          ><img src="../images/logo.svg" width="30" height="25" class="d-inline-block align-top" alt="" />
-          <h1>Rate Plans</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="?script=close_window">Facilitator Guides</a>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://matthewhunter83.github.io/css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Rate Plans</title>
+  <meta name="viewport" content="initial-scale=1.0" />
+</head>
+<body name="top">
+  <header>
+    <nav class="navbar navbar-dark fixed-top">
+      <a class="navbar-brand" href="#"><img src="../images/logo.svg" width="30" height="25" class="d-inline-block align-top" alt="">
+        <h1>Rate Plans</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="?script=close_window">Facilitator Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=get_users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=new_leaderboard">Leaderboards</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=move_users_to_radio">Move learners to radio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=move_users_to_talk">Move learners to talk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=attendance">Take Attendance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=meetback">Create meetback timer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=create_teams">Create Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="?script=delete_teams">Delete Teams</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <article class="shadow">
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/ready-logo.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/title.png"></a></div>
+    <h2>Intro</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Purpose</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>Mobile Associates will learn about T-Mobile postpaid and prepaid plans, and how to make a personalized plan recommendation, based on each customer’s needs.</p>
+          <p>After successfully completing this module, they will be able to:</p>
+          <ul>
+            <li>Describe T-Mobile’s postpaid rate plans.</li>
+            <li>Describe T-Mobile’s prepaid rate plans.</li>
+            <li>Match rate plans with customer needs/lifestyle.</li>
+            <li>Recommend a rate plan based on customer needs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/1.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Explain</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>Rate plans are the foundation of the service we provide to customers.</li>
+            <li>This includes postpaid and prepaid plans.</li>
+            <li>T-Mobile ONE, our flagship and industry-leading plan, created the end of customers having to worry about how much high-speed data they need.</li>
+            <li>Customers don’t like getting a bill that is much more than they expected due to various taxes and fees, so being the Un-carrier, we solved that pain point. </li>
+            <li>T-Mobile ONE, with taxes and fees included, removes the guesswork from how much the monthly bill is really going to be.</li>
+            <li>While the basics of T-Mobile ONE are straightforward, there are some variations and details about the plan that are important to understand.</li>
+            <li>T-Mobile Essentials provides customers with an entry level plan with only the necessities at an affordable price.</li>
+            <li>Many customers still prefer the flexibility of prepaid.</li>
+            <li>Customers will rely on your expertise to answer questions about available plans, and which might work best for them.</li>
+            <li>During your DIY activity, you’ll dig into the details of T-Mobile rate plans.</li>
+            <li>Be prepared to explain the benefits of each T-Mobile rate plan.</li>
+            <li>In C2, you’ll notice lots of other rate plans – most of which are plans we offered in the past but are now grandfathered.</li>
+            <li>Plans are considered “grandfathered” when they are no longer offered for sale, even though existing customers may still have them.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2>DIY Activity</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Purpose</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>To enable Mobile Associates to differentiate between T-Mobile ONE offers, learn about prepaid plans, and make a personalized rate plan recommendation by matching customer needs to plan benefits.</p>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/2.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Instructions</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p><strong>TIMING: 5 min setup, 1 hr 15 min DIY research, 15 WBT 15 min debrief</strong></p>
+          <ol>
+            <li>Research the various postpaid and prepaid plans T-Mobile offers and how we stack up against the competition.</li>
+            <li>While completing the DIY activity consider:
+              <ul>
+                <li>Benefits of to each rate plan.</li>
+                <li>What a customer would want to know.</li>
+                <li>Key differences that apply to each rate plan.</li>
+                <li>What a customer could say that would let you know this plan is a good fit.</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=get_users">Users</a>
+            <li>Complete the Explore the Possibilities of T-Mobile One WBT in Un-carrier Academy.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/3.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Debrief</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>What does a customer gain with ONE Plus (<a href="https://c2.t-mobile.com/docs/DOC-428707">428707</a>) and what does it cost?
+              <ul>
+                <li>When combined with T-Mobile ONE, the ONE Plus add-on provides customers with 20GB of 4G LTE mobile hotspot, HD video, 2x international roaming speeds, plus unlimited Gogo Inflight Wi-Fi, Name ID and Voicemail to text for voice lines.</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=new_leaderboard">Leaderboards</a>
+            <li>What customer types would benefit from T-Mobile Essentials (<a href="https://c2.t-mobile.com/docs/DOC-442994">442994</a>)?
+              <ul>
+                <li>Customers who only want the essentials at a lower price point</li>
+                <li>Customers who don’t travel much or have a need for features like ONE Plus or Gogo Inflight Wi-Fi</li>
+              </ul>
             </li>
-            <div class="dropdown-divider"></div>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=move_users_to_radio">Move learners to radio</a>
+            <li>What are the differences between T-Mobile ONE and T-Mobile ONE No Credit Check?
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th scope="col">
+                      T-Mo One
+                    </th>
+                    <th scope="col">
+                      T-Mo One NCC
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Credit Check Required</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Deposit Required</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Simple Global</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Autopay Eligible</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Netflix On Us</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Carrier Freedom</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>EIP</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>International Roaming Calls</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr
+                  <tr>
+                    <td>Global Data Passes</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Line Limit</td>
+                    <td>12</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/4.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Debrief</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>What is T-Mobile ONE 55+ (<a href="https://c2.t-mobile.com/docs/DOC-435084">435084</a>)?
+              <ul>
+                <li>T-Mobile ONE plan at a discounted rate</li>
+                <li>Only available to customers age 55 or older</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=move_users_to_talk">Move learners to talk</a>
+            <li>What’s different about T-Mobile ONE Military (<a href="https://c2.t-mobile.com/docs/DOC-438371">438371</a>)? Who’s eligible?
+              <ul>
+                <li>T-Mobile ONE plan at a discounted rate</li>
+                <li>Available to verified past or present members of an eligible US military branch, or Gold Star Family members</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=attendance">Take Attendance</a>
+            <li>How is T-Mobile ONE prepaid (<a href="https://c2.t-mobile.com/docs/DOC-436675">436675</a>) different than T-Mobile ONE No Credit Check?
+              <ul>
+                <li>No ID required</li>
+                <li>Only single lines of service – no family plan option</li>
+                <li>Devices may cost more upfront</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=meetback">Create meetback timer</a>
+            <li>How is Simply Prepaid (<a href="https://c2.t-mobile.com/docs/DOC-428605">428605</a>)different than T-Mobile ONE prepaid?
+              <ul>
+                <li>Lower cost than T-Mobile ONE Prepaid</li>
+                <li>Ideal for cost-conservative customers looking for good pricing value with no ID or credit check required</li>
+                <li>All versions include unlimited talk and text, but pricing varies depending upon how much high-speed data is included with the plan</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=create_teams">Create Teams</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?script=delete_teams">Delete Teams</a>
+            <li>What’s unique about the Prepaid Tourist plan (<a href="https://c2.t-mobile.com/docs/DOC-436845">436845</a>)?
+              <ul>
+                <li>Ideal for visitors in the United States</li>
+                <li>Provides 21 days of service</li>
+                <li>Unlimited talk and text</li>
+                <li>Limited high-speed 4G LTE data</li>
+                <li>Service cannot be extended past 21 days</li>
+              </ul>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <article class="shadow">
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/ready-logo.png"/></a>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/title.png"/></a>
+    </div>
+    <h2>Bring It Together Activity</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Purpose</p>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/1.png"/></a>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>This activity is meant to give your class an opportunity to practice identifying rate plans based upon customer needs/lifestyle and making personalized rate plan recommendations that clearly show how the plan benefits the customer, based on their needs.</p>
+        </div>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/2.png"/></a>
+      <div class="col-3">
+        <p class="list-group-item">Explain</p>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/3.png"/></a>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>While T-Mobile ONE is probably a great fit for a lot of customers, the standard postpaid version won’t always be a one-size-fits-all.</li>
+            <li>You’ll want to consider when it might benefit a customer, so you can help fit them into the right plan.</li>
+            <li>Keep in mind that prepaid may also be the best fit for some customers.</li>
+          </ul>
+        </div>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/4.png"/></a>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/5.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Instructions</p>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/5.png"/></a>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p><strong>TIMING: 5 min setup, 40 min group breakout, 10 min debrief</strong></p>
+          <p>Split class into small groups of 2-3. No more than 3 people to allow everyone time to skill practice. </p>
+          <ol>
+            <li>Review the instructions on the <strong>Bring It Together</strong> slide.</li>
+            <li>For this activity, it is recommended that each group be assigned the following video customers (<a href="https://c2.t-mobile.com/docs/437605">437605</a>):
+              <ul>
+                <li>Allen (Millennial)</li>
+                <li>Scarlett (Server/Prepaid)</li>
+                <li>Carl (Family) </li>
+              </ul>
+            </li>
+            <li>Learners may need to revisit the videos to refresh their memory.</li>
+            <li>The videos won’t necessarily provide all the information they need. This is a good time for learners to capture what questions they would ask, to gather more information from the customer.</li>
+            <li>The skill practice is for each person to play the role of one of the video customers while someone else plays the Mobile Associate. If there are three people in each group, one will be an observer.</li>
+            <li>As the Mobile Associate, they should ask open-ended questions to gain a full understanding of the customer’s needs and lifestyle.
+              <ul>
+                <li>Ask learners to give you the definition of open and closed questions. Lead a quick discussion on when you use each type and why. </li>
+              </ul>
+            </li>
+            <li>Once you’ve gathered enough information, offer a personalized recommendation, including:
+              <ul>
+                <li>Rate plan</li>
+                <li>Explanation of why you believe this plan will benefit them.</li>
+              </ul>
+            </li>
+            <li>Create a Purchase Estimate in T-Mobile Connect based off the rate plan recommended.</li>
+            <li>Have the Mobile Associate send the Purchase Estimate to their own email.</li>
+            <li>Rotate through until each person has been the Mobile Associate.</li>
+          </ol>
+        </div>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/6.png"/></a>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/6.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Debrief</p>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/qa.png"/></a>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>What went well?</li>
+            <li>What was challenging?</li>
+            <li>Any ‘a-ha’ moments?</li>
+            <li>How did you use the interaction model?</li>
+            <li>What questions do you have?</li>
+          </ul>
+        </div>
       </div>
-      <div class="image">
-        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/are-you-with-us.png"/></a>
+    </div>
+    <h2>Sales Floor Activities</h2>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Explain</p>
       </div>
-    </article>
-    <div class="space"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+      <div class="col-9">
+        <div class="list-group-item">
+          <p>We’re not done learning about Rate Plans. The fun has just begun!</p>
+          <p>When your learners are out on the sales floor today, the group should be connecting the dots between what they learned in class and what they see in real life.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-primary">
+      <p><strong>Note:</strong> Time is allotted at the end of each day for sales floor activities. Most days will have sales floor activities from multiple modules. Before ending this module, spend a few moments covering the instructions for this module’s sales floor activities. Refer to the Ready! Roadmap (<a class="alert-link" href="https://c2.t-mobile.com/docs/437474">437474</a>) for specific timing.</p>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/rate-plans/7.png"></a></div>
+    <div class="row">
+      <div class="col-3">
+        <p class="list-group-item">Instructions</p>
+      </div>
+      <div class="col-9">
+        <div class="list-group-item">
+          <ul>
+            <li>Review the content on the slide with the group.</li>
+            <li>Have the learners bring their <strong>Sales Floor Activity</strong> Guide with them and take notes as they observe and interact with the store team on the sales floor. </li>
+            <li>If learners are unable to complete an activity or observe everything on the slide, additional time for sales floor activities is provided during the weekly review days. This is a good time for learners to go back through the week’s activities and fill in the blanks.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/qa.png"></a></div>
+    <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/are-you-with-us.png"></a></div>
+  </article>
+  <div class="space"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
