@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Tele-Fet;
+  src: url('../fonts/tele-groteskfet.eot') format('embedded-opentype'), url('../fonts/tele-groteskfet.woff2') format('woff2'), url('../fonts/tele-groteskfet.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tele-Hal;
+  src: url('../fonts/tele-groteskhal.eot') format('embedded-opentype'), url('../fonts/tele-groteskhal.woff2') format('woff2'), url('../fonts/tele-groteskhal.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tele-Nor;
+  src: url('../fonts/tele-grotesknor.eot') format('embedded-opentype'), url('../fonts/tele-grotesknor.woff2') format('woff2'), url('../fonts/tele-grotesknor.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tele-Ult;
+  src: url('../fonts/tele-groteskult.eot') format('embedded-opentype'), url('../fonts/tele-groteskult.woff2') format('woff2'), url('../fonts/tele-groteskult.woff') format('woff');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+body,
+img {
+  background-color: rgb(241, 241, 241);
+}
+
+.back {
+  font-size: 2rem;
+  flex: 0 0 5rem;
+  text-align: center;
+}
+
+.title {
+  font-family: Tele-Ult;
+  flex: 1 0 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1rm;
+}
+
+a.users {
+  font-size: 2rem;
+  flex: 0 0 5rem;
+  text-align: center;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+main {
+  position: absolute;
+  top: 5rem;
+  /* left: 0;
+  width: 100%; */
+  overflow: auto;
+  height: calc(100vh - 5rem);
+}
+
+header > nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 5rem;
+  z-index: 1000;
+}
+header > nav > a {
+  color: white;
+}
+
+.navbar {
+  background-color: black;
+  vertical-align: middle;
+}
+
+nav img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-family: Tele-Hal;
+}
