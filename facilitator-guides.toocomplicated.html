@@ -1,4 +1,24 @@
-const facilitatorGuideItems = {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Facilitator Guides</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+    </header>
+    <main class="container-fluid pt-3 text-center">
+      <div class="row">
+        <div class="col" id="main"></div>
+      </div>
+    </main>
+    <script>
+    const facilitatorGuideItems = {
   type: 'image',
   image: '/images/ready.png',
   days: [
@@ -2290,11 +2310,45 @@ const facilitatorGuideItems = {
 
 
 const main = document.getElementById( 'main' )
-const daysDiv = document.createElement('div')
-const modulesDiv = document.createElement('div')
-const postsDiv = document.createElement('div')
+const header = document.getElementById('header')
+let daysDiv = document.createElement('div')
+let modulesDiv = document.createElement('div')
+let postsDiv = document.createElement('div')
+
+const nav = document.createElement('nav')
+
+  const back = document.createElement('a')
+  back.classList.add('back')
+  back.href = '#'
+
+  const backIcon = document.createElement('i')
+  backIcon.classList.add('fas', 'fa-chevron-left')
+  back.append(backIcon)
+
+  const title = document.createElement('a')
+  title.classList.add('title')
+  title.href = '#top'
+
+  const users = document.createElement('a')
+  users.classList.add('users')
+  users.href = '?script=get_users'
+
+  const usersIcon = document.createElement('i')
+  usersIcon.classList.add('fas', 'fa-users')
+  users.append(usersIcon)
+
+  nav.append(back, title, users)
+  header.append(nav)
 
 const handleShowDays = () => {
+  handleHideSections()
+  daysDiv = document.createElement('div')
+  title.text = 'Facilitator Guides'
+  
+  if (daysDiv.children.length > 0) {
+    daysDiv.childNodes.forEach(child => daysDiv.removeChild(child))
+  }
+  
   facilitatorGuideItems.days.map(day => {
     const img = document.createElement('img')
     img.src = `https://matthewhunter83.github.io${day.image}`
@@ -2307,7 +2361,20 @@ const handleShowDays = () => {
 }
 
 const handleShowModules = day => {
-  main.removeChild(daysDiv)
+  handleHideSections()
+  modulesDiv = document.createElement('div')
+
+  title.text = facilitatorGuideItems.days
+    .find(targetDay => targetDay.name === day).name
+
+  if (modulesDiv.children.length > 0) {
+    modulesDiv.childNodes.forEach(child => modulesDiv.removeChild(child))
+  }
+
+  back.addEventListener('click', () => {
+    handleShowDays()
+  })
+
   facilitatorGuideItems.days
     .find(targetDay => targetDay.name === day)
     .modules.map(module => {
@@ -2315,28 +2382,80 @@ const handleShowModules = day => {
       img.src = `https://matthewhunter83.github.io${module.image}`
       img.classList.add('img-fluid', 'rounded', 'btn', 'btn-light', 'mb-3', 'shadow-sm', 'p-0')
       img.text = module.name
-      img.addEventListener('click', () => handleShowPosts(day, img.text))
+      img.addEventListener('click', () => {
+        handleShowPosts(day, img.text)
+      })
       modulesDiv.append(img)
     })
   main.append(modulesDiv)
 }
 
 const handleShowPosts = (day, module) => {
-  main.removeChild(modulesDiv)
+  postsDiv = document.createElement('div')
+  handleHideSections()
+  title.text = facilitatorGuideItems.days
+    .find(targetDay => targetDay.name === day)
+    .modules.find(targetModule => targetModule.name === module).name
+
+  if (postsDiv.children.length > 0) {
+    postsDiv.childNodes.forEach(child => postsDiv.removeChild(child))
+  }
+
+  back.addEventListener('click', () => {
+    handleShowModules(day)
+  })
+
   facilitatorGuideItems.days
     .find(targetDay => targetDay.name === day)
     .modules.find(targetModule => targetModule.name === module)
     .posts.map(post => {
-      const img = document.createElement('img')
-      img.src = `https://matthewhunter83.github.io${post.image}`
-      img.classList.add('img-fluid', 'rounded', 'btn', 'btn-light', 'mb-3', 'shadow-sm', 'p-0')
-      img.text = post.name
-      img.addEventListener('click', () => {
-        console.log(img.text)
-      })
-      postsDiv.append(img)
+      if (post.type !== 'video') {
+        // const token = (post.type === 'text' && !post.hideToken) ? true : false
+        console.log(post.type)
+        const imgDiv = document.createElement('div')
+        imgDiv.classList.add('image')
+
+        const imgLink = document.createElement('a')
+        imgLink.href=`?script=send_post&$channel=text`
+        // ${!!token ? '' : '&$token=no'}
+
+        const img = document.createElement('img')
+        img.classList.add('slide')
+        img.src = `https://matthewhunter83.github.io${post.image}`
+        img.classList.add('img-fluid', 'rounded', 'btn', 'btn-light', 'mb-3', 'shadow-sm', 'p-0')
+        img.text = post.name
+        img.addEventListener('click', () => {
+          console.log(img.text)
+        })
+
+        imgLink.append(img)
+        imgDiv.append(imgLink)
+
+
+        // <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/accessories/1.png"></a></div>
+
+        postsDiv.append(imgDiv)
+      } else {
+        const img = document.createElement('img')
+        img.src = post.image
+        img.classList.add('img-fluid', 'rounded', 'btn', 'btn-light', 'mb-3', 'shadow-sm', 'p-0')
+        img.addEventListener('click', () => {
+          console.log(img.text)
+        })
+        postsDiv.append(img)
+      }
+      
     })
   main.append(postsDiv)
 }
 
+const handleHideSections = () => {
+  if (main.children.length > 0) {
+    main.childNodes.forEach(child => main.removeChild(child))
+  }
+}
+
 handleShowDays()
+</script>
+  </body>
+</html>
