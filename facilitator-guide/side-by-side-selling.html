@@ -1,345 +1,98 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://matthewhunter83.github.io/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <title>Side-by-Side Selling</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+  </head>
+  <body name="top">
+    <header>
+      <nav class="navbar navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"
+          ><img src="../images/logo.svg" width="30" height="25" class="d-inline-block align-top" alt="" />
+          <h1>Side-by-Side Selling</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="?script=close_window">Facilitator Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=get_users">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=new_leaderboard">Leaderboards</a>
+            </li>
+            <div class="dropdown-divider"></div>
 
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://matthewhunter83.github.io/css/bootstrap.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <title>Side-by-Side Selling</title>
-  <meta name="viewport" content="initial-scale=1.0" />
-</head>
-<body name="top">
-  <header>
-    <nav class="navbar navbar-dark fixed-top">
-      <a class="navbar-brand" href="#"><img src="../images/logo.svg" width="30" height="25" class="d-inline-block align-top" alt="">
-        <h1>Side-by-Side Selling</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="?script=close_window">Facilitator Guides</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=get_users">Users</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=new_leaderboard">Leaderboards</a>
-          </li>
-          <div class="dropdown-divider"></div>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="?script=move_users_to_talk">Move learners to talk</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=attendance">Take Attendance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=meetback">Create meetback timer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=create_teams">Create Teams</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?script=delete_teams">Delete Teams</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=move_users_to_talk">Move learners to talk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=attendance">Take Attendance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=meetback">Create meetback timer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=create_teams">Create Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?script=delete_teams">Delete Teams</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <article class="shadow">
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/ready-logo.png"/></a>
       </div>
-    </nav>
-  </header>
-  <article class="shadow">
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/ready-logo.png"></a></div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/title.png"></a></div>
-  <h2>Intro</h2>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Purpose</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>To introduce Mobile Associates to side-by-side selling.</p>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling.png"/></a>
       </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/1.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>Side-by-side selling – We’ve talked about it a little already and you’re going to hear more about it in the coming weeks!</p>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-1.png"/></a>
       </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Ask</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>What do we mean by “side-by-side selling?”</li>
-          <li>Why do we do it?</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-2.png"/></a>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>Side-by-side selling is our way of making the customer feel like a partner, instead of a transaction.</li>
-          <li>It means we’re open and transparent with our customers.</li>
-          <li>It’s a subtle, yet powerful way to remove unseen barriers in a conversation.</li>
-          <li>Although it’s rather simple, executing it with strangers can feel uncomfortable, at first.</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-3.png"/></a>
       </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Ask</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>How do we get comfortable with something that’s uncomfortable?</p>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-4.png"/></a>
       </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>You’re going to get lots of practice, throughout training, but first let’s be sure we know what we should be practicing.</li>
-          <li>You’ve already told me what side-by-side selling is and why we do it.</li>
-          <li>Now, let’s discuss some tools you can use while side-by-side selling!</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-5.png"/></a>
       </div>
-    </div>
-  </div>
-  <h2>Customer Connect</h2>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Purpose</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>After successfully completing this module, Mobile Associates will be able to:</p>
-        <ul>
-          <li>Describe the Purchase Estimate and how it supports side-by-side selling.</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-6.png"/></a>
       </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Ask</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p><strong>Who remembers the five categories within Customer Connect?</strong></p>
-        <p><strong>Answer:</strong></p>
-        <ul>
-          <li>Competitive Comparison</li>
-          <li>Network</li>
-          <li>Plans</li>
-          <li>Product + Accessories</li>
-          <li>Purchase Estimate</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-7.png"/></a>
       </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/2.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>Our customers have said they want simplicity from their wireless provider.</li>
-          <li>They want to know exactly what they signed up for prior to leaving the store.</li>
-          <li>We can provide a collaborative and interactive approach to side-by-side selling with the help from some of our digital tools.</li>
-          <li>The tool we will be learning today is called the <strong>Purchase Estimate</strong>.</li>
-          <li>The <strong>Purchase Estimate</strong> lives inside Customer Connect and is on every REMO in our stores.</li>
-          <li>You will have time to <span>Explore and Discover</span> the other four categories later today during your Sales Floor Activities.</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-8.png"/></a>
       </div>
-    </div>
-  </div>
-  <h2>Purchase Estimate</h2>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/3.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>The Purchase Estimate helps you build a complete wireless solution that fits your customer’s needs.</li>
-          <li>We should always ask questions to understand our customers’ needs and this tool takes all the information you gather and puts it in an easy-to-read format.</li>
-          <li>Based on the reason for the customers visit, you have three Purchase Estimate options:
-            <ul>
-              <li>Purchased</li>
-              <li>Still thinking about it</li>
-              <li>Already with us</li>
-            </ul>
-          </li>
-          <li>Select <span>Purchased</span> if your customer is a new subscriber to T-Mobile and signed up today.</li>
-          <li><span>Still thinking about it</span> is for new customers who did not sign up today and need time to digest your recommendation.</li>
-          <li><span>Already with us</span> is for our loyal T-Mobile customers interested in an account change.</li>
-          <li>Based on your selection, your customer will receive a personalized Purchase Estimate, so make sure it’s the right one.</li>
-          <li>Let’s take a tour of the Purchase Estimate!</li>
-        </ul>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling-9.png"/></a>
       </div>
-    </div>
-  </div>
-  <h2>Walk Through Activity</h2>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Purpose</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>Obtain hands on experience navigating the Purchase Estimate Tool.</p>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/qa.png"/></a>
       </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Action</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>Show the Purchase Estimate Tool within Customer Connect.</p>
+      <div class="image">
+        <a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/are-you-with-us.png"/></a>
       </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/4.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Instructions</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ol>
-          <li>Navigate MA’s to login to T-Mobile Connect</li>
-          <li>MA’s follow along with their REMO or computer</li>
-          <li>Complete Walk Through Activity as a team, using a made-up name, e-mail, and phone number.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/5.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Action</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>Start by inputting the customer’s:
-            <ul>
-              <li>Name</li>
-              <li>E-Mail</li>
-              <li>Phone Number</li>
-            </ul>
-          </li>
-          <li>Tap your customer’s preferred language.</li>
-          <li>Tap the type of Purchase Estimate from the Guide the Purchase drop down.</li>
-          <li>Show each option:
-            <ul>
-              <li>Purchased</li>
-              <li>Still thinking about it</li>
-              <li>Already with us</li>
-            </ul>
-          </li>
-          <li>For this walk through, we will use ‘Purchased’.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>Next week you will learn the different types of Purchase Estimates and get some additional practice.</li>
-          <li>We’re going digital, so the Purchase Estimate totals up the cost two ways!
-            <ul>
-              <li>Monthly Total</li>
-              <li>In-Store Total</li>
-            </ul>
-          </li>
-          <li>Under each section, there are C2 links for additional information.</li>
-          <li>At the end of the Purchase Estimate, include your T-Mobile e-mail address along with your store phone number.</li>
-          <li>During training you won’t be using the RSM e-mail and SAP fields, however once you are in your stores this is an important step.</li>
-          <li>This information is displayed on the customer’s copy of the Purchase Estimate.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/6.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Debrief</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>What are the benefits of providing our customers with a Purchase Estimate?
-            <ul>
-              <li>Eliminates bill shock. Customers know what their bills will look like prior to leaving the store.</li>
-              <li>Helps with customers who are just shopping to have a clear and easy way to know what T-Mobile can offer us.</li>
-            </ul>
-          </li>
-          <li>What ways could a Purchase Estimate help prevent confusion for our customers?
-            <ul>
-              <li>If a customer is financing a phone they will have a clear breakdown of the costs.</li>
-              <li>If a customer has auto pay they will see the total discount they will be taking advantage of.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <h2>Sales Floor Activities</h2>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Explain</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <p>We’re not done learning about side-by-side selling. The fun has just begun!</p>
-        <p>When your learners are out on the sales floor today, the group should be connecting the dots between what they learned in class and what they see in real life.</p>
-      </div>
-    </div>
-  </div>
-  <div class="alert alert-primary">
-    <p><strong>Note:</strong> Time is allotted at the end of each day for sales floor activities. Most days will have sales floor activities from multiple modules. Before ending this module, spend a few moments covering the instructions for this module’s sales floor activities.
-    <br /><br />Refer to the Ready! Roadmap (<a href="https://c2.t-mobile.com/docs/DOC-437474">437474</a>) for specific timing.</p>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/side-by-side-selling/7.png"></a></div>
-  <div class="row">
-    <div class="col-3">
-      <p class="list-group-item">Instructions</p>
-    </div>
-    <div class="col-9">
-      <div class="list-group-item">
-        <ul>
-          <li>Review the content on the slide with the group.</li>
-          <li>Have the learners bring their <strong>Sales Floor Activity Guide</strong> with them and take notes as they observe and interact with the store team on the sales floor.</li>
-          <li>If learners are unable to complete an activity or observe everything on the slide, additional time for sales floor activities is provided during the weekly review days. This is a good time for learners to go back through the week’s activities and fill in the blanks.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/qa.png"></a></div>
-  <div class="image"><a href="?script=send_post&$channel=text"><img class="slide shadow-lg" src="../images/are-you-with-us.png"></a></div>
-  </article>
-  <div class="space"></div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    </article>
+    <div class="space"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
